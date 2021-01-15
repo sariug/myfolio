@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { RouterModule } from '@angular/router';
 import { ResumeComponent } from './resume/resume.component'
+import { MarkdownModule } from 'ngx-markdown'
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,8 +23,8 @@ import { ResumeComponent } from './resume/resume.component'
       { path:'', component: HomeComponent },
       { path: 'resume', component:ResumeComponent},
       { path: 'projects', component:ProjectsComponent}
-
-    ])
+    ]),
+    MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
