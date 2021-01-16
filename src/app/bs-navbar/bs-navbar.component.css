@@ -14,3 +14,9 @@ md-nav-item:focus {
     border: none;
     outline:none;
 }
+md-nav-item:hover, a:active{
+    color: orange;
+  }
+  mat-toolbar{
+      background-color: #303030;
+  }

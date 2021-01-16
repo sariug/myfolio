@@ -23,9 +23,7 @@ h2{
     margin:0 6px;
     justify-content: center;
   }
-.btn:hover{
-  color:rgb(138, 90, 28);
-}
+
 .btn-circle {
     width: 40px;
     height: 40px;
@@ -33,18 +31,36 @@ h2{
     border-radius: 100%;
     text-align: center;
 }
+.btn:hover, a:active{
+  color: orange;
+  border:none;
+  border: none;
+  outline:none;
+}
+.btn:focus-visible {
+  border: none;
+  outline:none;
+}
+.btn:focus {
 
+  border: none;
+  box-shadow:none;
+}
+.btn{
+  color:lightgrey;
+  transition: none;
+}
 .avatar{
-  height:66vh;
+  height:750px;
   width:auto;
   position: relative;
   overflow: hidden;
-  margin-bottom: -10vh;
+  margin-bottom: -100px;
 }
 .myimg{
-  width:30vh;
-  height:44vh;
+  width:220px;
+  height:360px;
   object-fit:cover;
   border-radius:50%;
-  margin-top:10%;
+  margin-top:250px;
 }

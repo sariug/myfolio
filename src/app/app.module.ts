@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { ResumeComponent } from './resume/resume.component';
 import { MarkdownModule } from 'ngx-markdown';
 import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { NgxSocialButtonModule, SocialServiceConfig} from "ngx-social-button";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component'
@@ -31,6 +32,7 @@ export function getAuthServiceConfigs() {
   ],
   imports: [
     BrowserModule,
+    MatToolbarModule,
     MatButtonModule,
     NgxSocialButtonModule,
     RouterModule.forRoot([

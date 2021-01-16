@@ -3,7 +3,7 @@
 
 @include mat-core();
 
-$my-app-primary: mat-palette($mat-orange,600);
+$my-app-primary: mat-palette($mat-grey, 900);
 $my-app-accent: mat-palette($mat-yellow,100);
 $my-app-warn:  mat-palette($mat-red);
 
@@ -31,7 +31,7 @@ $my-app-theme: mat-dark-theme($my-app-primary, $my-app-accent, $my-app-warn);
 };
 
 // You can put any color here. I've chosen mat-color($my-app-primary, 700)
-$my-foreground: my-mat-dark-theme-foreground(mat-color($my-app-primary, 700));
+$my-foreground: my-mat-dark-theme-foreground(mat-color($my-app-primary, 100));
 $my-app-theme-custom: map-merge($my-app-theme, (foreground: $my-foreground));
 
  // Include your custom theme.
