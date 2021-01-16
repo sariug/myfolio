@@ -8,6 +8,17 @@ import { ProjectsComponent } from './projects/projects.component';
 import { RouterModule } from '@angular/router';
 import { ResumeComponent } from './resume/resume.component'
 import { MarkdownModule } from 'ngx-markdown'
+import {MatButtonModule} from '@angular/material/button'
+import { NgxSocialButtonModule, SocialServiceConfig} from "ngx-social-button";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './footer/footer.component'
+export function getAuthServiceConfigs() {
+  let config = new SocialServiceConfig()
+      .addFacebook("Your-Facebook-app-id")
+      .addGoogle("Your-Google-Client-Id")
+      .addLinkedIn("Your-LinkedIn-Client-Id");
+  return config;
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,18 +26,24 @@ import { MarkdownModule } from 'ngx-markdown'
     HomeComponent,
     ResumeComponent,
     ProjectsComponent,
-    ResumeComponent
+    ResumeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
+    MatButtonModule,
+    NgxSocialButtonModule,
     RouterModule.forRoot([
       { path:'', component: HomeComponent },
       { path: 'resume', component:ResumeComponent},
       { path: 'projects', component:ProjectsComponent}
     ]),
-    MarkdownModule.forRoot()
+    MarkdownModule.forRoot(),
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [{        provide: SocialServiceConfig,
+    useFactory: getAuthServiceConfigs
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

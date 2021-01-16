@@ -1,0 +1,50 @@
+
+.home{
+    width: 100%;
+
+    display:inline-block;
+    text-align: center;
+}
+h1{
+  font-size: 2.0rem;
+}
+h2{
+  font-size: 1.5rem;
+}
+.button-row{
+    display: inline;
+}
+.example-flex-container {
+    display: flex;
+    justify-content: center;
+  }
+.example-button-container {
+    display: flex;
+    margin:0 6px;
+    justify-content: center;
+  }
+.btn:hover{
+  color:rgb(138, 90, 28);
+}
+.btn-circle {
+    width: 40px;
+    height: 40px;
+    padding: 4px 0px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.avatar{
+  height:66vh;
+  width:auto;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -10vh;
+}
+.myimg{
+  width:30vh;
+  height:44vh;
+  object-fit:cover;
+  border-radius:50%;
+  margin-top:10%;
+}
