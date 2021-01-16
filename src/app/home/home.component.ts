@@ -11,5 +11,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  navigate()
+  {
+    console.log();
+   // if(adress==="linkedin")
+    window.open("https://www.linkedin.com/in/ugurcansari/");
+  }
 }
