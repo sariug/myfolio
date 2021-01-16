@@ -2,3 +2,15 @@
     padding-left: 5%;
     padding-right: 5%;
 }
+md-nav-item:hover {
+    text-decoration: underline; 
+    cursor: pointer;
+  }
+  md-nav-item:focus-visible {
+    border: none;
+    outline:none;
+}
+md-nav-item:focus {
+    border: none;
+    outline:none;
+}

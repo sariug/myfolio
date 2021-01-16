@@ -6,9 +6,9 @@ import { BsNavbarComponent } from './bs-navbar/bs-navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { RouterModule } from '@angular/router';
-import { ResumeComponent } from './resume/resume.component'
-import { MarkdownModule } from 'ngx-markdown'
-import {MatButtonModule} from '@angular/material/button'
+import { ResumeComponent } from './resume/resume.component';
+import { MarkdownModule } from 'ngx-markdown';
+import { MatButtonModule } from '@angular/material/button';
 import { NgxSocialButtonModule, SocialServiceConfig} from "ngx-social-button";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component'
