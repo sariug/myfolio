@@ -1,7 +1,9 @@
-.footer {
+footer {
+    bottom: 0 ;
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    padding-left: 100%;
     line-height: 80px;
+}
+.footer{
     text-align: center;
 }
