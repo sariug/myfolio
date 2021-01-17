@@ -1,5 +1,5 @@
 .container{
-        min-height:83vh; /* will cover the 100% of viewport */
+        min-height:86vh; /* will cover the 100% of viewport */
         overflow: hidden;
         display: block;
         position: relative;
