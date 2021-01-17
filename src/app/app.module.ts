@@ -13,6 +13,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { NgxSocialButtonModule, SocialServiceConfig} from "ngx-social-button";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component'
+import { HttpClientModule } from '@angular/common/http';
+
 export function getAuthServiceConfigs() {
   let config = new SocialServiceConfig()
       .addFacebook("Your-Facebook-app-id")
@@ -34,6 +36,7 @@ export function getAuthServiceConfigs() {
     BrowserModule,
     MatToolbarModule,
     MatButtonModule,
+    HttpClientModule,
     NgxSocialButtonModule,
     RouterModule.forRoot([
       { path:'', component: HomeComponent },
